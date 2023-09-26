@@ -1,0 +1,48 @@
+.mainColor{
+background-color: #284580;
+}
+.textColor{
+  color:#284580 ;
+}
+.removeTruncate:hover {
+overflow: visible;
+white-space: normal;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 1rem !important; /* Adjust the width */
+  height: 20px !important; /* Adjust the height */
+  font-size: 20px !important; /* Adjust the font size if arrows are text-based */
+  /* You can also use any other styling properties as needed */
+}
+
+/* Optionally, change the arrow color */
+.swiper-button-prev::after, .swiper-button-next::after {
+  width: 2rem !important; /* Adjust the width */
+  height: 2rem !important; /* Adjust the height */
+  font-size: 2rem !important;
+  color:#284580; /* Change the arrow color */
+}
+@media (max-width:600px){
+  .swiper-button-prev::after, .swiper-button-next::after {
+    width: 1rem !important; /* Adjust the width */
+    height: 1rem !important; /* Adjust the height */
+    font-size: 1rem !important;
+
+  }
+}
+/* ContactCard.css */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contact-card {
+  animation: slideInRight 0.7s ease-in-out;
+}
