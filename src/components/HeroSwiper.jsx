@@ -30,7 +30,7 @@ export default function App({carousalImg}) {
           carousalImg&&carousalImg.map( (ele,ind) => (
             <SwiperSlide key={ind}>
               
-                <img src={ele} alt="" className='h-[80vh] w-[100vw] object-cover'/>
+                <img src={ele} alt="" className='h-[85vh] w-[100vw] object-cover'/>
               
               </SwiperSlide>
           ))

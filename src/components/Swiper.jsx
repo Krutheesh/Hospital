@@ -51,9 +51,9 @@ swiper && swiper.map( (ele,index) => (
   <SwiperSlide className='py-[1rem] md:px-[1.2rem]'>
 <div className='  w-[50%] md:w-[100%] mx-auto object-cover'>
     <div>
-      <img src={ele.image} className='w-[100%]' alt="founder" />
+      <img src={ele.photo} className='w-[11rem] h-[11rem]' alt="founder" />
     </div>
-    <div className='py-[0.5rem] text-[0.7rem]    md:p-1 '>
+    <div className='text-[0.7rem]    py-[0.5rem] '>
       <p className='text-red-600 font-semibold'>{ele.name}</p>
       <p className=''>{ele.designation}</p>
       <p>{ele.role}</p>

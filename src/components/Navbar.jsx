@@ -11,7 +11,7 @@ function Navbar() {
   return (
     
     
-<div className="w-full absolute  shadow md:relative  text-gray-700 bg-white lg:px-[4rem]  top-0 z-50 ">
+<div className="w-full absolute  shadow md:relative  text-gray-700 bg-white lg:px-[6rem]  top-0 z-50 ">
   <div className="flex flex-col max-w-screen-xl px-1  mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
     <div className="py-4  md:w-[20%] w-[100%] md:hidden lg:flex flex flex-row items-center justify-between">
  
@@ -147,8 +147,8 @@ diffSpecialities.slice(10,20).map(ele => (
       
       </div>  */}
       <Link onClick={()=> setHam(!ham)} to='/doctors' className="mx-1 my-2 p-1 lg:text-[1rem] border-white border-b-2 hover:text-red-600 md:hover:border-red-600 md:hover:border-b-2 text-sm  bg-transparent     md:mt-0 md:ml-4 " >FIND A DOCTOR </Link>
-      <Link  onClick={()=> setHam(!ham)} className="mx-1 my-2 p-1 lg:text-[1rem] border-white border-b-2 hover:text-red-600 md:hover:border-red-600 md:hover:border-b-2 text-sm  bg-transparent     md:mt-0 md:ml-4 " >CAREERS</Link>
-      <Link  onClick={()=> setHam(!ham)} to='/videos' className="mx-1 my-2 p-1 lg:text-[1rem] border-white border-b-2 hover:text-red-600 md:hover:border-red-600 md:hover:border-b-2 text-sm  bg-transparent     md:mt-0 md:ml-4 " >VIDEOS</Link>
+      {/* <Link  onClick={()=> setHam(!ham)} className="mx-1 my-2 p-1 lg:text-[1rem] border-white border-b-2 hover:text-red-600 md:hover:border-red-600 md:hover:border-b-2 text-sm  bg-transparent     md:mt-0 md:ml-4 " >CAREERS</Link> */}
+      <Link  onClick={()=> setHam(!ham)} to='/videos' className="mx-1 my-2 p-1 lg:text-[1rem] border-white border-b-2 hover:text-red-600 md:hover:border-red-600 md:hover:border-b-2 text-sm  bg-transparent     md:mt-0 md:ml-4 " >OUR VIDEOS</Link>
       <Link onClick={()=> setHam(!ham)} to='/contact' className="mx-1 my-2 p-1 lg:text-[1rem] border-white border-b-2 hover:text-red-600 md:hover:border-red-600 md:hover:border-b-2 text-sm  bg-transparent     md:mt-0 md:ml-4 " >CONTACT US</Link>
 
 

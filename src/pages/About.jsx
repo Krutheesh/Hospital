@@ -9,28 +9,35 @@ import chairman from '../assets/chairman.png'
 import f1 from '../assets/f1.png'
 import Slotfix from '../components/Slotfix';
 import Footer from '../components/Footer';
+import rajesh from '../assets/doctors/rajesh.png'
+
 function About() {
   const contentHospital = "River NIMS is founded by expert medical professionals who believe that world-class medical care needs to be accessible and affordable to all especially in non-metro cities. Backed by this conviction they established River NIMS as the first tertiary hospital in Nalgonda. The Founders who are experts in their respective specialisations bring to the table wealth of experience, professionalism and, above all, deep commitment to ensuring good health for all. As a result, River NIMS delivers best-inclass treatments and healthcare services in its multi-speciality areas. Each Department offers treatment backed by the highest expertise, advanced technology, and facilities to ensure that patients receive high-quality treatment and care. River NIMS is a 100-bed facility that meets the needs of patients with its team of medical professionals, nurses, allied health professionals, support staff, and palliative care specialists who strive relentlessly to provide modern healthcare services."
  const chairmanMessage = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
  const founders = [
   {
-    image:f1,
+    id:1,
+    photo:f1,
+    department:"General Medicine",
     name:"Dr. N. Ravinder Reddy",
     designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+    role:'Consultant General Physician'
 
   },
   {
-    image:f1,
-    name:"Dr. S. Sai Krishna Reddy",
-    designation:"MBBS, MD, DM (Neurology)(MAMC, GB Pant Hospital, Delhi)",
-    role:"Consultant Cardiologist"
-
-  },
-  {
-    image:f1,
+    id:7,
+    photo:rajesh,
+    department:"Neurology",
     name:"Dr. Rajesh Reddy Pasham",
-    designation:"MBBS, MD, DM (Neurology)(MAMC, GB Pant Hospital, Delhi)",
+    designation:'MBBS, MD, DM (Neurology) (MAMC, GB Pant Hospital, Delhi)',
+    role:'Consultant Neurologist'
+
+  },
+  {
+    
+    name:"Dr. S. Sai Krishna Reddy",
+    designation:"MBBS, MD, DM (Cardiology) (AIIMS, Delhi)",
+    
     role:"Consultant Neurologist"
 
   }
@@ -71,7 +78,7 @@ function About() {
        <div className='md:w-[20%] flex justify-end   '>
          <img src={chairman} alt="" className='  ' />
        </div>
-       <div className='md:w-[80%] '>
+       <div className=''>
        <h2 className='py-[1rem]  text-[1.5rem] font-semibold  md:text-start text-center'>CHAIRMAN MESSAGE</h2>
          <p className='  mx-auto  text-center md:text-start font-semibold'>{chairmanMessage}</p>
        </div>
@@ -140,6 +147,7 @@ always delivering the best level of healthcare.
 </p>
 
 
+
   </div>
 </div>
 
@@ -149,14 +157,14 @@ always delivering the best level of healthcare.
 <Fade>
 <div className='px-[6rem]'>
 <h2 className='py-[2rem]  text-[1.5rem] font-semibold  md:text-start text-center textColor'>MEET FOUNDERS</h2>
-<div className='flex flex-col md:flex-row md:justify-between items-center'>
+<div className='flex flex-col md:flex-row md:justify-around items-center'>
   {
 founders && founders.map( (ele,index) => (
-<div className=' w-[70%] md:w-[20%] object-cover py-5  '>
+<div className=' w-[70%] md:w-[20%] object-cover py-5 '>
     <div>
-      <img src={ele.image} className='w-[90%]' alt="founder" />
+      <img src={ele?.photo} className='w-[90%]' alt="founder" />
     </div>
-    <div className='py-[0.7rem] text-[0.7rem]  md:text-[0.7rem] md:w-[90%]  md:p-1 '>
+    <div className='py-[1rem] text-[0.7rem]  md:text-[0.7rem] md:w-[90%]   '>
       <p className='text-red-600 font-semibold'>{ele.name}</p>
       <p className=''>{ele.designation}</p>
       <p>{ele.role}</p>
@@ -170,6 +178,7 @@ founders && founders.map( (ele,index) => (
    
 </div>
 </div>
+
 
 </Fade>
 

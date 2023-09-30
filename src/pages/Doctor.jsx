@@ -67,17 +67,17 @@ function Doctor() {
           </select>
         </div>
         {changeDoctors.length !== 0 ? (
-          <div className="grid grid-cols-4 gap-3 py-[1rem]  ">
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-10 py-[1rem]  ">
             {changeDoctors.map((ele, ind) => (
               <div
                 key={ele.id}
                 className=" flex flex-col  items-center object-cover"
               >
                 <div>
-                  <img src={ele.photo} className=" w-[100%] " alt="founder" />
+                  <img src={ele.photo} className=" w-[14rem] h-[15rem]" alt="founder" />
                 </div>
-                <div className="w-[100%] md:w-[90%]">
-                  <div className="mx-auto py-[0.5rem] text-[0.4rem] md:text-[0.8rem] md:w-[75%]  w-[100%]  md:p-1 ">
+                <div className="w-[100%] py-[1rem]">
+                  <div className=" py-[0.5rem] text-[0.4rem] md:text-[0.8rem]   w-[100%]  md:p-1 ">
                     <p className="text-red-600 font-semibold">{ele.name}</p>
                     <p className="text-[0.3rem] md:text-[0.7rem]">
                       {ele.designation}

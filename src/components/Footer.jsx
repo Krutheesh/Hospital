@@ -1,24 +1,22 @@
 import React from 'react'
 
-
+import { Link } from 'react-router-dom'
+import { customUseContext } from '../context/Context'
 import {MdEmail,MdLocationOn,MdPhoneInTalk} from 'react-icons/md'
 import {FaInstagram,FaFacebookSquare,FaYoutube} from 'react-icons/fa'
 import { Fade } from 'react-awesome-reveal'
 function Footer() {
-
+  const {diffSpecialities} = customUseContext()
   const footer1 = [
    " Home",
 "About Us",
 "Specialities",
 "Services",
 "Find a Doctor",
-"Careers",
-"News Coverage",
 "Videos",
 "Contact Us"
   ]
   const footer2 =[
-    "Anaesthesiology",
 "Critical Care",
 "Cardiology",
 "Cardiothoracic Surgery",
@@ -76,29 +74,41 @@ function Footer() {
             </li>
       </div>
       <ul  className='md:w-[20%] space-y-2'>
-        {
-          footer1&&footer1.map( (ele,ind) => (
-            <li key={ind}>{ele}</li>
-          ))
-        }
+      <li className='hover:text-red-600' >
+      <Link  to='/'>Home</Link></li>
+      <li className='hover:text-red-600' >
+      
+      <Link  to='/about'>About</Link></li>
+      <li className='hover:text-red-600' >
+      <Link  to='/doctors'>Find a doctor</Link></li>
+      <li className='hover:text-red-600' >
+      <Link to='/videos'>Our Videos</Link></li>
+      <li className='hover:text-red-600' >
+      <Link to='/contact'>Contact us</Link> </li> 
       </ul>
       <ul  className='md:w-[20%] space-y-2'>
-        {
-          footer2&&footer2.map( (ele,ind) => (
-            <li key={ind}>{ele}</li>
-          ))
-        }
+      {
+diffSpecialities.slice(0,9).map(ele => (
+  <li key={ele.name} className='hover:text-red-600' >
+      <Link  to={`speciality/${ele.id}`}>{ele.name}</Link>
+  </li>
+)) 
+
+  }
       </ul>
       <ul  className='md:w-[20%] space-y-2'>
-        {
-          footer3&&footer3.map( (ele,ind) => (
-            <li key={ind}>{ele}</li>
-          ))
-        }
+      {
+diffSpecialities.slice(9,20).map(ele => (
+  <li key={ele.name} className='hover:text-red-600' >
+      <Link  to={`speciality/${ele.id}`}>{ele.name}</Link>
+  </li>
+)) 
+
+  }
       </ul>
     </div>
     <div className='py-[0.5rem] text-center text-[0.8rem]'>
-    © Copyright 2022 - River NIMS Hospitals
+    © Copyright 2023 - River NIMS Hospitals
     </div>
     </Fade>
     </div>

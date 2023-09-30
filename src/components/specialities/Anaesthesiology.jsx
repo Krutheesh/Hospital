@@ -2,6 +2,7 @@ import React from 'react'
 import Listing from '../speciality/Listing'
 import Listing2 from '../speciality/Listing2'
 import cardio from '../../assets/cardio.jpg'
+import Anesth from "../../assets/Images/Anesth.jpg"
 function Anaesthesiology() {
   const procedure1 =[
     "KEY PROCEDURES",
@@ -72,7 +73,7 @@ function Anaesthesiology() {
     <div className='flex flex-col md:flex-row py-[1rem] justify-center md:space-x-5'>
         
         <div  className='md:w-[35%] w-[100%] p-2'>
-        <Listing photo={cardio} procedures={procedure1}/>
+        <Listing photo={Anesth} procedures={procedure1}/>
         </div>
           
           <div  className='md:w-[35%] w-[100%] p-2'>
@@ -89,7 +90,7 @@ function Anaesthesiology() {
           
          </div>
          <div  className='md:w-[35%] w-[100%] p-2'>
-        <Listing photo={cardio} procedures={procedure2}/>
+        <Listing photo={Anesth} procedures={procedure2}/>
         </div>
 
       </div>

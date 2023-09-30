@@ -21,6 +21,12 @@ import Urology from '../components/specialities/Urology'
 import Vascular from "../components/specialities/Vascular";
 import Critical from "../components/specialities/Critical";
 import Laparoscopic from '../components/specialities/Laparoscopic'
+import ragavender from '../assets/doctors/ragavender.png'
+import Keerthi from '../assets/doctors/Keerthi.png'
+import vijay from '../assets/doctors/vijay.png'
+import rajesh from '../assets/doctors/rajesh.png'
+import mahender from '../assets/doctors/mahender.png'
+import Anesth from '../assets/Images/Anesth.jpg'
 const MyContext = createContext()
 
 
@@ -30,64 +36,55 @@ export const  ContextProvider = ({children}) => {
     {
       id:1,
       photo:f1,
-      department:"Cardiology",
-      name:"Dr. S. Sai Krishna Reddy",
-      designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
-      role:'Consultant Cardiologist'
-
-    },
-    {
-      id:2,
-      photo:f1,
-      department:"Nephrology",
-      name:"Dr. S. Sai Krishna Reddy",
-      designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
-      role:'Consultant Cardiologist'
+      department:"General Medicine",
+      name:"Dr. N. Ravinder Reddy",
+      designation:"MBBS, MD (General Medicine)",
+      role:'Consultant General Physician'
 
     },
     {
       id:3,
-      photo:f1,
-      department:"Oncology",
-      name:"Dr. S. Sai Krishna Reddy",
+      photo:mahender,
+      department:"Anaesthesiology",
+      name:"Dr. Mahender",
       designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
       role:'Consultant Cardiologist'
 
     },
     {
       id:4,
-      photo:f1,
-      department:"Neurology",
-      name:"Dr. S. Sai Krishna Reddy",
-      designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
-      role:'Consultant neurology'
+      photo:ragavender,
+      department:"Pulmonology",
+      name:"Dr. A. Raghavender Reddy",
+      designation:'MBBS, MD(Pulomonology)d',
+      role:'Consultant Interventional pulmonologist member of European Respiratory Society'
 
     },
     {
       id:5,
-      photo:f1,
-      department:"Cardiology",
-      name:"Dr. S. Sai  Reddy",
-      designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
-      role:'Consultant Cardiologist'
+      photo:Keerthi,
+      department:"General Medicine",
+      name:"Dr. A. Keerthi Reddy",
+      designation:'MD (General Medicine), DM (Gastro)',
+      role:'Consultant Gastroenterologist Hepatologist & Therapeutic Endoscopist'
 
     },
     {
       id:6,
-      photo:f1,
-      department:"card",
-      name:"Dr. S. Sai Krishna Reddy",
+      photo:vijay,
+      department:"Anaesthesiology",
+      name:"Dr. Vippakayala Vijay Kumar",
       designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
       role:'Consultant Cardiologist'
 
     },
     {
       id:7,
-      photo:f1,
-      department:"Cardiology",
-      name:"Dr. S. Sai Krishna Reddy",
-      designation:'MBBS Delhi)',
-      role:'Consultant Cardiologist'
+      photo:rajesh,
+      department:"Neurology",
+      name:"Dr. Rajesh Reddy Pasham",
+      designation:'MBBS, MD, DM (Neurology) (MAMC, GB Pant Hospital, Delhi)',
+      role:'Consultant Neurologist'
 
     }
 
@@ -97,7 +94,7 @@ export const  ContextProvider = ({children}) => {
     id:1,
     name:"Anaesthesiology",
     color:'bg-red-600',
-   img:cardio,
+   img:Anesth,
     discription:<Anaesthesiology/>
 
     
@@ -164,7 +161,7 @@ export const  ContextProvider = ({children}) => {
   },
   { id:14,
     color:'bg-gray-600',
-    name:"ORTHOPAEDICS ",
+    name:"Orthopadics ",
     discription: <Ortho/>,
   },
   { id:15,

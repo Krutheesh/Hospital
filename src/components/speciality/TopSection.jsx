@@ -7,6 +7,7 @@ import { useParams,Link } from 'react-router-dom'
 import {FaAngleLeft} from 'react-icons/fa6'
 import Slotfix from '../Slotfix'
 import Footer from '../Footer'
+
 function TopSection({title,photo,description}) {
   const {diffSpecialities} = customUseContext()
   const {id} = useParams()

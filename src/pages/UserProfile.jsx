@@ -13,11 +13,11 @@ function UserProfile() {
 console.log(doctor)
   console.log(doctors)
   return (
-    <section className="bg-white md:px-[8rem] ">
+    <section className="bg-white md:px-[8rem] mt-[8rem] md:mt-0 ">
       <Slotfix/>
     <div className="grid max-w-screen-xl px-4 py-8 mx-auto md:space-x-10 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
     <div className=" lg:mt-0 lg:col-span-3 mx-auto lg:flex">
-            <img src={f1} alt="doctor"/>
+            <img className='w-[15rem] h-[15rem]' src={doctor[0].photo} alt="doctor"/>
         </div> 
         
         <div className="mr-auto place-self-center lg:col-span-8 w-[63%]  px-4  pt-[2rem] mx-auto ">

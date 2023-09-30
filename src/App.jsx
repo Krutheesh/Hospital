@@ -24,13 +24,14 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
 
-              <Route path="/slotbook" element={<BookSlot />} />
+              
               <Route path="/:id" element={<UserProfile />} />
               <Route path = '/videos' element={<Videos/>}/>
             </Route>
             <Route path="/doctors" element={<Doctor />} />
             <Route path="/speciality/:id" element={<TopSection />} />
             <Route path="/about" element={<About />} />
+            <Route path="/slotbook" element={<BookSlot />} />
           </Routes>
         </ContextProvider>
       </BrowserRouter>

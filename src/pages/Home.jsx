@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContentImg from "../components/ContentImg";
@@ -16,71 +17,95 @@ import '../App.css'
 import BookSlot from "./BookSlot";
 import Slotfix from "../components/Slotfix";
 import { Link } from "react-router-dom";
+
+import Anaesthesiology from "../assets/Icons/Anaesthesiology.png";
+import Cardiology from "../assets/Icons/Anaesthesiology.png";
+import Cardiothoracic from "../assets/Icons/Cardiothoracic.png";
+import Critical from "../assets/Icons/Critical.png";
+import Dermatology from "../assets/Icons/Dermatology.png";
+
+import Laparoscopic from "../assets/Icons/Laparoscopic.png";
+import Diabetology from "../assets/Icons/Diabetology.png";
+
+import Maxillofacial from "../assets/Icons/Maxillofacial.png";
+import Gastroenterology from "../assets/Icons/Gastroenterology.png";
+import Nephrology from "../assets/Icons/Nephrology.png";
+import Neurology from "../assets/Icons/Neurology.png";
+import Oncology from "../assets/Icons/Oncology.png";
+import Ortho from "../assets/Icons/Ortho.png";
+import Pain from "../assets/Icons/Pain.png"
+import Physiotherapy from "../assets/Icons/Physiotherapy.png"
+import Pulmonology from "../assets/Icons/Pulmonology.png"
+import Radiology from "../assets/Icons/Radiology.png"
+import Urology from "../assets/Icons/Urology.png"
+import Vascular from "../assets/Icons/Vascular.png"
+
+import carousal from '../assets/Images/carousal.jpg'
+import carousal2 from '../assets/Images/carousal2.jpg'
+import carousal3 from '../assets/Images/carousal3.jpg'
+import ragavender from '../assets/doctors/ragavender.png'
+import Keerthi from '../assets/doctors/Keerthi.png'
+import vijay from '../assets/doctors/vijay.png'
+import rajesh from '../assets/doctors/rajesh.png'
+import mahender from '../assets/doctors/mahender.png'
+import f1 from '../assets/f1.png'
 function Home() {
   const swiper = [
     {
-      image:chairman,
+      id:1,
+      photo:f1,
+      department:"General Medicine",
       name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+      designation:"MBBS, MD (General Medicine)",
+      role:'Consultant General Physician'
+
     },
     {
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+      id:3,
+      photo:mahender,
+      department:"Anaesthesiology",
+      name:"Dr. Mahender",
+      designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
+      role:'Consultant Cardiologist'
+
     },
     {
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+      id:4,
+      photo:ragavender,
+      department:"Pulmonology",
+      name:"Dr. A. Raghavender Reddy",
+      designation:'MBBS, MD(Pulomonology)d',
+      role:'Consultant Interventional pulmonologist member of European Respiratory Society'
+
     },
     {
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
-    },{
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+      id:5,
+      photo:Keerthi,
+      department:"General Medicine",
+      name:"Dr. A. Keerthi Reddy",
+      designation:'MD (General Medicine), DM (Gastro)',
+      role:'Consultant Gastroenterologist Hepatologist & Therapeutic Endoscopist'
+
     },
     {
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+      id:6,
+      photo:vijay,
+      department:"Anaesthesiology",
+      name:"Dr. Vippakayala Vijay Kumar",
+      designation:'MBBS, MD,DM (Cardiology) (AIIMS, Delhi)',
+      role:'Consultant Cardiologist'
+
     },
     {
-      image:chairman,
-      name:"Dr. S. Sai Krishna Reddy",
-    designation:"MBBS, MD,DM (Cardiology) (AIIMS, Delhi)",
-    role:"Consultant Cardiologist"
-    },{
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
-    },{
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
-    },
-    {
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
-    },
-    {
-      image:chairman,
-      name:"Dr. N. Ravinder Reddy",
-    designation:"MBBS, MD (General Medicine)",
-    role:"Consultant General Physician"
+      id:7,
+      photo:rajesh,
+      department:"Neurology",
+      name:"Dr. Rajesh Reddy Pasham",
+      designation:'MBBS, MD, DM (Neurology) (MAMC, GB Pant Hospital, Delhi)',
+      role:'Consultant Neurologist'
+
     }
+
   ]
   const specialities = [
     {
@@ -91,80 +116,80 @@ function Home() {
   const diffSpecialities = [
     {
     name:"Anaesthesiology",
-    photo:cardiology
+    photo:Anaesthesiology
   },
   {
     name:"Critical Care",
-    photo:cardiology
+    photo:Critical
   },
   {
     name:"Cardiology",
-    photo:cardiology
+    photo:Cardiology
   },
 
   {
     name:"Cardiothoracic Surgery",
-    photo:cardiology
+    photo:Cardiothoracic
   },
   {
     name:"Dermatology & Cosmetology",
-    photo:cardiology
+    photo:Dermatology
   },
   {
     name:"Medical & Surgical Gastroenterology",
-    photo:cardiology
+    photo:Gastroenterology
   },
   {
     name:"General & Laparoscopic Surgery",
-    photo:cardiology
+    photo:Laparoscopic
   },
   {
     name:"General Medicine & Diabetology",
-    photo:cardiology
+    photo:Diabetology
   },
   {
     name:"Maxillofacial Surgery",
-    photo:cardiology
+    photo:Maxillofacial
   },
   {
     name:"Neurology & Neurosurgery",
-    photo:cardiology
+    photo:Neurology
   },
   {
     name:"Nephrology",
-    photo:cardiology
+    photo:Nephrology
   },
   {
     name:"Oncology & Onco Surgery",
-    photo:cardiology
+    photo:Oncology
   },
   {
     name:"Ortho, Poly Trauma & Joint Replacement Surgery Oncology & Onco Surgery ",
-    photo:cardiology
+    photo:Ortho
   },
   {
     name:"Pain Management",
-    photo:cardiology
+    photo:Pain
   },
   {
     name:"Physiotherapy",
-    photo:cardiology
+    photo:Physiotherapy
   },
   {
     name:"Pulmonology",
-    photo:cardiology
+    photo:Pulmonology
   },
   {
     name:"Radiology & Imaging",
-    photo:cardiology
+    photo:Radiology
   },
   {
     name:"Urology",
-    photo:cardiology
+    photo:Urology
   },
   {
     name:"Vascular & Endovascular Surgery",
-    photo:cardiology
+    photo:Vascular
   },
   
   
@@ -174,7 +199,7 @@ function Home() {
 
 
 ]
-const carousalImg =[hospital,handshake,cardiology]
+const carousalImg =[carousal,carousal3,carousal2]
   let contentHospital =
     "River NIMS has been established with the intent to set up a world-class medical institution that revolutionises medical care in Nalgonda and transforms the lives of people in the community. \n As the region's first tertiary 100-bed hospital, River NIMS ispoised to raise standards of healthcare with its expertise,state-of-the-art infrastructure, advanced technology, team ofhighly qualified and experienced specialists, range of core specialities, preventive healthcare services, 24/7 emergencycare, reliable diagnostic services, and accreditation from national boards.";
   return (
@@ -182,7 +207,7 @@ const carousalImg =[hospital,handshake,cardiology]
      
       
      
-     <div className="mt-[7rem] md:mt-0">
+     <div className="">
       <Fade>
       <HeroSwiper carousalImg={carousalImg}/>
       </Fade>
@@ -255,7 +280,7 @@ const carousalImg =[hospital,handshake,cardiology]
 
 <div className='relative flex justify-start items-center my-[5rem]'>
       <img src={handshake} alt="handshake" className='w-[100vw] h-[37vh] object-cover  ' />
-      <p className='font-semibold text-[1.6rem] z-50 text-white text-center absolute w-full md:px-[10rem]'> Lorem, ipsum dolor sit Lorem ipsum dolor sit amet. amet consectetur adipisicing elit. Sit, corporis.</p>
+      <p className='font-semibold text-[1.6rem] z-50 text-white text-center absolute w-full md:px-[10rem]'> You are in Safe Hands</p>
       <div class="absolute inset-0 mainColor opacity-80"></div>
      </div>
 
